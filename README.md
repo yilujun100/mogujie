@@ -1,7 +1,5 @@
 # mogujie
 
-## 学习 CSS 设计模式及架构
-
 ## Project setup
 
 ```
