@@ -2,6 +2,8 @@
     <header>
         CSS 架构
     </header>
+    <a href="https://baidu.com">百度</a>
+    <input type="text" />
 </template>
 
 <script>
@@ -18,7 +20,7 @@ header {
     width: 200px;
     height: 200px;
     background: rgba(0, 0, 0, 0.4);
-    color: #fff;
+    color: $color-primary;
     @include box-center(center, center);
 }
 </style>
