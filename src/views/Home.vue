@@ -4,6 +4,7 @@
     </header>
     <a href="https://baidu.com">百度</a>
     <input type="text" />
+    <div radius1></div>
 </template>
 
 <script>

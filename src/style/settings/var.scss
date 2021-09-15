@@ -20,3 +20,9 @@ $background-color-tertiary: $color-primary;
 $border-width-base: 1Px !default;
 $border-style-base: solid !default;
 $border-base: $border-width-base $border-style-base $border-color-base !default;
+
+/* ZIndex
+----------------------- */
+$index-normal: 1;
+$index-top: 1000;
+$index-popper: 2000;

@@ -1,5 +1,5 @@
 @for $i from 1 through 3 {
     [ellipsis#{$i}] {
-        @include box-clamp($i);
+        @include ellipsis($i);
     }
 }

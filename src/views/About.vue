@@ -6,5 +6,6 @@
             <c-col span="8">span: 8</c-col>
             <c-col span="8">span: 8</c-col>
         </c-row>
+        <div circle style="width: 100px; height: 100px; background: red;"></div>
     </div>
 </template>
