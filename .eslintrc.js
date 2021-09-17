@@ -14,6 +14,10 @@ module.exports = {
         indent: 'off',
         semi: 'off',
         'arrow-parens': ['error', 'as-needed'],
-        'object-curly-newline': 'off'
+        'object-curly-newline': 'off',
+        'implicit-arrow-linebreak': 'off',
+        'arrow-body-style': 'off',
+        'import/prefer-default-export': 'off',
+        'no-shadow': 'off'
     }
 }

@@ -5,6 +5,7 @@ import store from './store'
 import mgjUI from './components'
 import 'normalize.css/normalize.css'
 import '@/style/index.scss'
+import '@/mock'
 
 createApp(App)
     .use(mgjUI)
