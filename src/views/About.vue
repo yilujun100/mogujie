@@ -10,6 +10,7 @@
         <ul>
             <li v-for="item in data.list" :key="item.id">{{ item.title }}</li>
         </ul>
+        <div class="box" circle></div>
     </div>
 </template>
 <script>
@@ -34,3 +35,10 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+.box {
+    width: 50px;
+    height: 50px;
+    background: pink;
+}
+</style>

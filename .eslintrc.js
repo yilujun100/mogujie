@@ -18,6 +18,8 @@ module.exports = {
         'implicit-arrow-linebreak': 'off',
         'arrow-body-style': 'off',
         'import/prefer-default-export': 'off',
-        'no-shadow': 'off'
+        'no-shadow': 'off',
+        'import/extensions': 'off',
+        'global-require': 'off'
     }
 }
