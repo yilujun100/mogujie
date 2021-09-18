@@ -18,6 +18,8 @@
             </p>
         </div>
         <div class="home__item3" mt30>你好 CSS</div>
+        <c-launch class="home__launch" mb10></c-launch>
+        <c-box-center bg-tertiary radius4>打开APP</c-box-center>
     </div>
 </template>
 

@@ -3,6 +3,11 @@ import 'vant/lib/col/index.css'
 import Row from 'vant/lib/row'
 import 'vant/lib/row/index.css'
 import { Layout, Header, Aside, Content, Footer } from './layout'
+import FootNav from './foot-nav'
+import BoxSkin from './box-skin'
+import BoxCenter from './box-center'
+import Columns from './columns'
+import Launch from './launch'
 
 const components = {
     Layout,
@@ -11,7 +16,12 @@ const components = {
     Content,
     Footer,
     CRow: Row,
-    CCol: Col
+    CCol: Col,
+    FootNav,
+    BoxSkin,
+    BoxCenter,
+    Columns,
+    Launch
 }
 
 const install = app => {
