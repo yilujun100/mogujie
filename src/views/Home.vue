@@ -38,6 +38,12 @@
             :fill="['#fcee0e', '#fffa2f', '#FFF', '#43CCF8']"
             :strokeWidth="2"
         />
+        <div class="box">
+            <div class="box__item box__item--bg1"></div>
+            <div class="box__item box__item--bg2"></div>
+            <div class="box__item box__item--bg3"></div>
+            <div class="box__item box__item--bg4"></div>
+        </div>
     </div>
 </template>
 
@@ -62,5 +68,29 @@ header {
     background: rgba(0, 0, 0, 0.4);
     color: $color-primary;
     @include box-center(center, center);
+}
+.box {
+    overflow: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    &__item {
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        &--bg1 {
+            background: pink;
+        }
+        &--bg2 {
+            background: red;
+        }
+        &--bg3 {
+            background: yellow;
+        }
+        &--bg4 {
+            background: blue;
+        }
+    }
 }
 </style>
