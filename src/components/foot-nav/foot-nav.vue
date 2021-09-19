@@ -34,7 +34,7 @@ export default {
         @include box-center($justify: center, $align: center);
         @include m(active) {
             & > a {
-                // @include t-color-primary('color');
+                @include t-color-primary('color');
             }
         }
     }
