@@ -20,15 +20,38 @@
         <div class="home__item3" mt30>你好 CSS</div>
         <c-launch class="home__launch" mb10></c-launch>
         <c-box-center bg-tertiary radius4>打开APP</c-box-center>
+        <balance-two
+            theme="multi-color"
+            size="34"
+            :fill="['#e41515', '#326fc2', '#FFF', '#43CCF8']"
+            :strokeWidth="2"
+        />
+        <hamburger-button
+            theme="multi-color"
+            size="34"
+            :fill="['#5f4f4f', '#2F88FF', '#FFF', '#43CCF8']"
+            :strokeWidth="2"
+        />
+        <star
+            theme="multi-color"
+            size="34"
+            :fill="['#fcee0e', '#fffa2f', '#FFF', '#43CCF8']"
+            :strokeWidth="2"
+        />
     </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import { BalanceTwo, HamburgerButton, Star } from '@icon-park/vue-next'
 
 export default {
     name: 'Home',
-    components: {}
+    components: {
+        BalanceTwo,
+        HamburgerButton,
+        Star
+    }
 }
 </script>
 
