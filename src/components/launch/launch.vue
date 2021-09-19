@@ -9,6 +9,14 @@
             />
             <div class="c-launch__download">
                 <span style="color: #000" mb10>蘑菇街 总有高手帮你挑</span>
+                <c-columns>
+                    <c-svg-star size="9" :colors="['#f3ad4a', '#f3ad4a']" mr6></c-svg-star>
+                    <c-svg-star size="9" :colors="['#f3ad4a', '#f3ad4a']" mr6></c-svg-star>
+                    <c-svg-star size="9" :colors="['#f3ad4a', '#f3ad4a']" mr6></c-svg-star>
+                    <c-svg-star size="9" :colors="['#f3ad4a', '#f3ad4a']" mr6></c-svg-star>
+                    <c-svg-star size="9" :colors="['#f3ad4a', '#f3ad4a']"></c-svg-star>
+                    <span style="color: #8e8e92" ml20>超过2亿用户已下载</span>
+                </c-columns>
             </div>
             <c-button class="c-launch__button" @click="goAppStore" radius4>打开APP</c-button>
         </c-columns>
@@ -49,7 +57,7 @@ export default {
 
     @include e(button) {
         @include dimensions(150px, 50px);
-        // @include t-color-primary('background');
+        @include t-color-primary('background');
         margin-left: 120px;
     }
 }

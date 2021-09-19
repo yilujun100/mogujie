@@ -5,9 +5,10 @@ import 'vant/lib/row/index.css'
 import { Layout, Header, Aside, Content, Footer } from './layout'
 import FootNav from './foot-nav'
 import BoxSkin from './box-skin'
-import BoxCenter from './box-center'
+import BoxCenter from './button'
 import Columns from './columns'
 import Launch from './launch'
+import { SvgSearch, SvgButton, SvgMore, SvgStar } from './svg-icon'
 
 const components = {
     Layout,
@@ -21,7 +22,11 @@ const components = {
     BoxSkin,
     BoxCenter,
     Columns,
-    Launch
+    Launch,
+    SvgSearch,
+    SvgButton,
+    SvgMore,
+    SvgStar
 }
 
 const install = app => {

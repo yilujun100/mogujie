@@ -5,7 +5,7 @@ module.exports = {
             postcss: {
                 plugins: [
                     require('postcss-plugin-px2rem')({
-                        rootValue: 37.5,
+                        rootValue: 75,
                         exclude: /(node_module)/,
                         minPixelValue: 3
                     })
@@ -13,8 +13,7 @@ module.exports = {
             },
             scss: {
                 prependData: `
-                    @import "@/style/settings/var.scss";
-                    @import "@/style/tools/_sassMagic.scss";
+                    @import "@/style/global.scss";
                 `
             }
         }

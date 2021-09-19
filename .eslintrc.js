@@ -21,6 +21,7 @@ module.exports = {
         'no-shadow': 'off',
         'import/extensions': 'off',
         'global-require': 'off',
-        'operator-linebreak': 'off'
+        'operator-linebreak': 'off',
+        'max-len': 'off'
     }
 }
