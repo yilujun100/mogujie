@@ -9,6 +9,7 @@ import Button from './button'
 import Columns from './columns'
 import Launch from './launch'
 import Search from './search'
+import Magazine from './magazine'
 import { SvgSearch, SvgButton, SvgMore, SvgStar } from './svg-icon'
 
 const components = {
@@ -28,7 +29,8 @@ const components = {
     Button,
     Columns,
     Launch,
-    Search
+    Search,
+    Magazine
 }
 
 const install = app => {
