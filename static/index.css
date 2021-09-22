@@ -1,0 +1,19 @@
+/*声明 WebFont*/
+@font-face {
+    font-family: 'feichi';
+    src: url('./font/feichi.ttf');
+    src:
+        url('./font/feichi.ttf') format('truetype');
+        /* 此部分根据根据你的字体源文件定义，注意路径 */
+        /* url('./font/tuzi.eot?#font-spider') format('embedded-opentype'),
+        url('./font/tuzi.woff') format('woff'),
+        url('./font/tuzi.ttf') format('truetype'),
+        url('./font/tuzi.svg') format('svg'); */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*使用选择器指定字体*/
+body {
+    font-family: 'feichi';
+}
