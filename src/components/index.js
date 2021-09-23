@@ -11,7 +11,7 @@ import Columns from './columns'
 import Launch from './launch'
 import Search from './search'
 import Magazine from './magazine'
-import { SvgSearch, SvgButton, SvgMore, SvgStar } from './svg-icon'
+import { SvgSearch, SvgButton, SvgMore, SvgStar, SvgThumbs } from './svg-icon'
 
 const components = {
     Layout,
@@ -26,6 +26,7 @@ const components = {
     SvgButton,
     SvgMore,
     SvgStar,
+    SvgThumbs,
     Avatar,
     BoxSkin,
     Button,

@@ -44,10 +44,11 @@ export default {
     // 直播间
     getLivesById: config => {
         const params = getParamsFromRestful(config.url, '/api/live/lives/:id')
+        console.log('getLivesById: ', params)
 
         let list = ''
 
-        if (params.id === 0) {
+        if (params.id === '0') {
             list = Mock.mock({
                 data: {
                     avatar:
@@ -64,7 +65,7 @@ export default {
                     isFocus: '@boolean'
                 }
             })
-        } else if (params.id === 1) {
+        } else if (params.id === '1') {
             list = Mock.mock({
                 data: {
                     avatar:
