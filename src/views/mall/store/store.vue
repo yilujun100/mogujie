@@ -110,10 +110,10 @@
 </template>
 <script>
 import { onMounted, reactive, toRefs } from 'vue'
-import { getRecommendatoryCategorys, getBrandVideos, getPromotions } from '@/api/mall'
-import { getChats } from '@/api/me'
 import { useRouter } from 'vue-router'
 import Toast from 'vant/lib/toast'
+import { getRecommendatoryCategorys, getBrandVideos, getPromotions } from '@/api/mall'
+import { getChats } from '@/api/me'
 
 export default {
     setup() {
@@ -127,7 +127,7 @@ export default {
         const router = useRouter()
 
         const goGoods = (id, title) => {
-            router.push({ path: '/mall/goods', query: { id: id, des: title } })
+            router.push({ path: '/mall/goods', query: { id, des: title } })
         }
 
         const goChat = () => {
