@@ -4,6 +4,7 @@ import Row from 'vant/lib/row'
 import 'vant/lib/row/index.css'
 import { Layout, Header, Aside, Content, Footer } from './layout'
 import FootNav from './foot-nav'
+import Avatar from './avatar'
 import BoxSkin from './box-skin'
 import Button from './button'
 import Columns from './columns'
@@ -17,6 +18,7 @@ const components = {
     Header,
     Aside,
     Content,
+    FootNav,
     Footer,
     CRow: Row,
     CCol: Col,
@@ -24,7 +26,7 @@ const components = {
     SvgButton,
     SvgMore,
     SvgStar,
-    FootNav,
+    Avatar,
     BoxSkin,
     Button,
     Columns,
