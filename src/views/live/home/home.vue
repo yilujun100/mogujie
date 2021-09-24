@@ -67,11 +67,13 @@ export default {
         onMounted(() => {
             Toast.loading({
                 message: '加载中...',
-                forbidClick: true
+                forbidClick: true,
+                duration: 0
             })
 
             getLives().then(res => {
                 data.liveList = res.data
+                Toast.clear()
             })
         })
 

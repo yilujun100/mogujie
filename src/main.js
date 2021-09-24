@@ -1,13 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import { store } from './store'
 import 'lib-flexible/flexible.js'
 import mgjUI from './components'
 import 'normalize.css/normalize.css'
 import '@/style/index.scss'
+import 'vant/lib/toast/style'
 import '@/mock'
-import '@icon-park/vue-next/styles/index.css'
 
 createApp(App)
     .use(mgjUI)

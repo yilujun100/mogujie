@@ -136,23 +136,39 @@ export default {
             })
         }
 
+        const fetccPromotions = async () => {
+            const res = await getPromotions()
+            return res.data
+        }
+
+        const fetchRecommendatoryCategorys = async () => {
+            const res = await getRecommendatoryCategorys()
+            return res.data
+        }
+
+        const fetchBrandVideos = async () => {
+            const res = await getBrandVideos()
+            return res.data
+        }
+
         onMounted(() => {
             Toast.loading({
                 message: '加载中...',
-                forbidClick: true
+                forbidClick: true,
+                duration: 0
             })
 
-            getPromotions().then(res => {
-                data.promotionList = res.data
-            })
-
-            getRecommendatoryCategorys().then(res => {
-                data.categoryList = res.data
-            })
-
-            getBrandVideos().then(res => {
-                data.brandList = res.data
-            })
+            Promise.all([fetccPromotions(), fetchRecommendatoryCategorys(), fetchBrandVideos()])
+                .then(values => {
+                    const [promotionList, categoryList, brandList] = values
+                    data.promotionList = promotionList
+                    data.categoryList = categoryList
+                    data.brandList = brandList
+                    Toast.clear()
+                })
+                .catch(error => {
+                    console.log('errorMsg: ', error)
+                })
         })
 
         const list = [

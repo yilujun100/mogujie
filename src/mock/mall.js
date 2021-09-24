@@ -21,7 +21,7 @@ export default {
         const params = getParamsFromRestful(config.url, '/api/mall/categorys/:id')
         let list = ''
 
-        if (params.id === 0) {
+        if (params.id === '0') {
             list = Mock.mock({
                 'data|30': [
                     {
@@ -36,7 +36,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 1) {
+        } else if (params.id === '1') {
             list = Mock.mock({
                 'data|15': [
                     {
@@ -51,7 +51,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 2) {
+        } else if (params.id === '2') {
             list = Mock.mock({
                 'data|15': [
                     {
@@ -66,7 +66,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 3) {
+        } else if (params.id === '3') {
             list = Mock.mock({
                 'data|15': [
                     {
@@ -81,7 +81,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 4) {
+        } else if (params.id === '4') {
             list = Mock.mock({
                 'data|15': [
                     {
@@ -96,7 +96,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 5) {
+        } else if (params.id === '5') {
             list = Mock.mock({
                 'data|15': [
                     {
@@ -247,7 +247,7 @@ export default {
 
         let list = ''
 
-        if (params.id === 0) {
+        if (params.id === '0') {
             list = Mock.mock({
                 'data|10': [
                     {
@@ -275,7 +275,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 1) {
+        } else if (params.id === '1') {
             list = Mock.mock({
                 'data|10': [
                     {
@@ -303,7 +303,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 2) {
+        } else if (params.id === '2') {
             list = Mock.mock({
                 'data|10': [
                     {
@@ -384,7 +384,7 @@ export default {
 
         let list = ''
 
-        if (params.id === 0) {
+        if (params.id === '0') {
             list = Mock.mock({
                 'data|100': [
                     {
@@ -406,7 +406,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 1) {
+        } else if (params.id === '1') {
             list = Mock.mock({
                 'data|100': [
                     {
@@ -428,7 +428,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 2) {
+        } else if (params.id === '2') {
             list = Mock.mock({
                 'data|100': [
                     {
@@ -450,7 +450,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 3) {
+        } else if (params.id === '3') {
             list = Mock.mock({
                 'data|100': [
                     {
@@ -472,7 +472,7 @@ export default {
                     }
                 ]
             })
-        } else if (params.id === 4) {
+        } else if (params.id === '4') {
             list = Mock.mock({
                 'data|100': [
                     {
@@ -570,7 +570,7 @@ export default {
 
         let list = ''
 
-        if (params.id === 113) {
+        if (params.id === '113') {
             list = Mock.mock({
                 data: {
                     banners: [
@@ -590,7 +590,7 @@ export default {
                     ]
                 }
             })
-        } else if (params.id === 114) {
+        } else if (params.id === '114') {
             list = Mock.mock({
                 data: {
                     banners: [
@@ -612,7 +612,7 @@ export default {
                     ]
                 }
             })
-        } else if (params.id === 105) {
+        } else if (params.id === '105') {
             list = Mock.mock({
                 data: {
                     banners: [
@@ -632,7 +632,7 @@ export default {
                     ]
                 }
             })
-        } else if (params.id === 106) {
+        } else if (params.id === '106') {
             list = Mock.mock({
                 data: {
                     banners: [
@@ -654,7 +654,7 @@ export default {
                     ]
                 }
             })
-        } else if (params.id === 120) {
+        } else if (params.id === '120') {
             list = Mock.mock({
                 data: {
                     banners: [
@@ -675,7 +675,7 @@ export default {
                     ]
                 }
             })
-        } else if (params.id === 121) {
+        } else if (params.id === '121') {
             list = Mock.mock({
                 data: {
                     banners: [

@@ -42,11 +42,13 @@ export default {
         onMounted(() => {
             Toast.loading({
                 message: '加载中...',
-                forbidClick: true
+                forbidClick: true,
+                duration: 0
             })
 
             getPromotionGoods({ status: 'lastcrazy' }).then(res => {
                 data.goodsList = res.data
+                Toast.clear()
             })
         })
 

@@ -22,6 +22,9 @@ module.exports = {
         'import/extensions': 'off',
         'global-require': 'off',
         'operator-linebreak': 'off',
-        'max-len': 'off'
+        'max-len': 'off',
+        'import/no-cycle': 'off',
+        'no-param-reassign': 'off',
+        'consistent-return': 'off'
     }
 }

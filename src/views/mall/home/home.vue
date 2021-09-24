@@ -107,14 +107,12 @@
 import { onMounted, reactive, toRefs } from 'vue'
 import { useRouter } from 'vue-router'
 import Toast from 'vant/lib/toast'
-import CAvatar from '@/components/avatar'
 import { Swipe, SwipeItem } from '@/components/swipe'
 import { getRecommendatoryCategorys, getBanners, getBrandVideos } from '@/api/mall'
 import { getChats } from '@/api/me'
 
 export default {
     components: {
-        CAvatar,
         CSwipe: Swipe,
         CSwipeItem: SwipeItem
     },
@@ -137,23 +135,39 @@ export default {
             })
         }
 
+        const fetchRecommendatoryCategories = async () => {
+            const res = await getRecommendatoryCategorys()
+            return res.data
+        }
+
+        const fetchBanners = async () => {
+            const res = await getBanners()
+            return res.data
+        }
+
+        const fetchBrandVideos = async () => {
+            const res = await getBrandVideos()
+            return res.data
+        }
+
         onMounted(() => {
             Toast.loading({
                 message: '加载中...',
-                forbidClick: true
+                forbidClick: true,
+                duration: 0
             })
 
-            getRecommendatoryCategorys().then(res => {
-                data.categoryList = res.data
-            })
-
-            getBanners().then(res => {
-                data.swipeList = res.data
-            })
-
-            getBrandVideos().then(res => {
-                data.brandList = res.data
-            })
+            Promise.all([fetchRecommendatoryCategories(), fetchBanners(), fetchBrandVideos()])
+                .then(values => {
+                    const [categoryList, swipeList, brandList] = values
+                    data.categoryList = categoryList
+                    data.swipeList = swipeList
+                    data.brandList = brandList
+                    Toast.clear()
+                })
+                .catch(error => {
+                    console.log('errorMsg: ', error)
+                })
         })
 
         const list = [

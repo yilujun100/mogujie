@@ -82,11 +82,13 @@ export default {
 
             Toast.loading({
                 message: '加载中...',
-                forbidClick: true
+                forbidClick: true,
+                duration: 0
             })
 
             getLivesById({ id }).then(res => {
                 data.live = res.data
+                Toast.clear()
             })
         })
 

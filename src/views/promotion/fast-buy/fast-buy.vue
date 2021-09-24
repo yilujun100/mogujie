@@ -153,20 +153,34 @@ export default {
             })
         }
 
+        const fetchHotGoods = async () => {
+            const res = await getHotGoods()
+            return res.data
+        }
+
+        const fetchFastBuyGoods = async () => {
+            const res = await getFastBuyGoods({ time: '00:00' })
+            return res.data
+        }
+
         onMounted(() => {
             Toast.loading({
                 message: '加载中...',
-                forbidClick: true
+                forbidClick: true,
+                duration: 0
             })
 
             start()
-            getHotGoods().then(res => {
-                data.hotGoodList = res.data
-            })
-
-            getFastBuyGoods({ time: '00:00' }).then(res => {
-                data.fastBuyGoods = res.data
-            })
+            Promise.all([fetchHotGoods(), fetchFastBuyGoods()])
+                .then(values => {
+                    const [hotGoodList, fastBuyGoods] = values
+                    data.hotGoodList = hotGoodList
+                    data.fastBuyGoods = fastBuyGoods
+                    Toast.clear()
+                })
+                .catch(error => {
+                    console.log('errorMsg: ', error)
+                })
         })
 
         const footerList = [
