@@ -1,33 +1,23 @@
-# mogujie
+## 仿蘑菇街移动端H5项目
 
-仿蘑菇街移动端 h5 项目
-技术栈：Vue3.0 + 本地 Mock 服务
 线上地址：http://47.98.220.220:8080/mogujie/#/mall/home
 
-## Project setup
+使用技术栈：
 
-```
-yarn install
-```
+* vue3.0
+* vue-router
+* vuex
+* axios
+* 本地Mock服务
 
-### Compiles and hot-reloads for development
+## Project Setup
 
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-
-```
-yarn build
-```
-
-### Lints and fixes files
-
-```
-yarn lint
+```bash
+# install dependencies
+yarn install or npm install
+# serve with hot reload at localhost:8080
+yarn serve or npm run serve
+# compiles and minifiles for production
+yarn build or npm run build
 ```
 
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
